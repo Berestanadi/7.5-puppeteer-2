@@ -1,0 +1,20 @@
+{
+  "name": "7.5-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.test.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Nadi",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.2.2",
+    "jest-puppeteer": "^6.1.1",
+    "puppeteer": "^19.2.0"
+  }
+}
