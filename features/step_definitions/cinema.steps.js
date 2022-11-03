@@ -52,6 +52,6 @@ Then("user sees the header {string}", async function (string) {
 });
 
 Then("user sees {string} is not clickable",{timeout: 60000}, async function (string) {
-  const acceptionButton = await this.page.$("button[disabled");
-  await expect(acceptionButton).be.disabled;
+  const acceptionButton = await this.page.$eval("button", (button) => button.disabled);
+  await expect(acceptionButton).to.be.true;
 })

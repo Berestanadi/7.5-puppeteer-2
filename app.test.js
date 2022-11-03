@@ -47,6 +47,6 @@ describe("GoToTheCinema test", () => {
         await movieTime(page, "1", "3");
         await page.waitForSelector("h1");
         let acceptionButton = await page.$eval("button", (button) => button.disabled);
-        expect(acceptionButton).toBe.disabled;
+        expect(acceptionButton).toBe(true);
     }, 60000);
 })
